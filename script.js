@@ -21,6 +21,7 @@ const getMargaritaItem = (margarita) => {
     const margaritaSection = document.createElement("section");
     margaritaSection.classList.add("margarita");
 
+    console.log(margarita);
     const img = document.createElement("img");
     img.src = margarita.strDrinkThumb;
 
