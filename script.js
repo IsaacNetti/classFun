@@ -30,6 +30,10 @@ const getMargaritaItem = (margarita) => {
     const h1 = document.createElement("h1");
     margaritaSection.append(h1);
     h1.innerHTML = margarita.strDrink;
+
+    const h2 = document.createElement("h2");
+    margaritaSection.append(h2);
+    h2.innerHTML = margarita.strAlcoholic;
     return margaritaSection;
 };
 
