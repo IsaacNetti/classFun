@@ -19,7 +19,7 @@ const showMargaritas = async () => {
 
 const getMargaritaItem = (margarita) => {
     const margaritaSection = document.createElement("section");
-    margaritaSection.classList.add("margarita")
+    margaritaSection.classList.add("margarita");
 };
 
 window.onload = () => showMargaritas();
