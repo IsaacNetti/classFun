@@ -22,10 +22,15 @@ const getMargaritaItem = (margarita) => {
     margaritaSection.classList.add("margarita");
 
     console.log(margarita);
+
     const img = document.createElement("img");
     img.src = margarita.strDrinkThumb;
-
     margaritaSection.append(img);
+
+    const h1 = document.createElement("h1");
+    margaritaSection.append(h1);
+    h1.innerHTML = margarita.strDrink;
+    return margaritaSection;
 };
 
 window.onload = () => showMargaritas();
