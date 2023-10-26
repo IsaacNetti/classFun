@@ -10,6 +10,10 @@ body{
     background-color: #D7E5CA;
     color: #8EACCD;
 }
+.margarita img{
+   max-width: 200px;
+   max-height: 200px;
+}
 @media screen and (min-width: 768px) {
     .flex-container{
         display: flex;
