@@ -1,5 +1,5 @@
 const getMargaritas = async () => {
-    const url = "www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+    const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
 
     try {
       const response = await fetch(url);
@@ -9,10 +9,10 @@ const getMargaritas = async () => {
     }
 };
 const showMargaritas = async () => {
-    let margaritas = await getMargaritas();
-    let margaritaSection = document.getElementById("margarita-body");
-  
-    margaritas.forEach((margarita) =>
+    const margaritas = await getMargaritas();
+    const margaritaSection = document.getElementById("margarita-body");
+
+    margaritas.drinks.forEach((margarita) =>
       margaritaSection.append(getMargaritaItem(margarita))
     );
   };
